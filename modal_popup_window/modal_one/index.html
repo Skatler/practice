@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal window on pure JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <a href="#" class="open-popup">Open popup</a>
+      <a href="#" class="open-popup">Open popup</a>
+      <a href="#" class="open-popup">Open popup</a>
+    </div>
+    <div class="popup__bg">
+      <form class="popup">
+        <img
+          src="/icon/1485969927-6-cross_78905.svg"
+          alt="close"
+          class="close-popup"
+          width="30"
+          height="30"
+        />
+        <label>
+          <input type="text" name="name" />
+          <div class="label__text">Your name</div>
+        </label>
+        <label>
+          <input type="tel" name="tel" />
+          <div class="label__text">Your number</div>
+        </label>
+        <label>
+          <textarea name="message"></textarea>
+          <div class="label__text">Your message</div>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!-- _____________________________________________________ -->
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,60 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modal Window</title>
-    <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
-    <section class="section section--1">
-      <a href="#modal-1" class="js-modal-open link"><span>Open modal 1</span></a> /
-      <a href="#modal-2" class="js-modal-open link">Open modal 2</a>
-    </section>
-    <section class="section section--2">2</section>
-    <section class="section section--3">3</section>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Two</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
 
-    <div class="modal modal--m" id="modal-1">
-      <div class="modal__dialog">
-        <div class="modal__dialog-header">
-          <div class="modal__dialog-header-content">Modal window 1</div>
-          <div class="modal__dialog-header-close">
-            <button class="js-modal-close modal__dialog-header-close-btn">
-              <span>&times;</span>
-            </button>
-          </div>
-        </div>
-        <div class="modal__dialog-body">
-          <div>modal__dialog-body</div>
-        </div>
-        <div class="modal__dialog-footer">
-          <button class="js-modal-close modal__dialog-footer-close-btn">
-            Close
-          </button>
-        </div>
+  <button data-modal-btn="my_modal1">Window One</button>
+  <div data-modal-window="my_modal1" class="modal">
+    <div class="modal_content">
+      <div class="modal_inner">
+        <div class="modal_title">First Modal Window</div>
+        <div class="close_modal_window">&times;</div>
       </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo ex labore esse saepe reprehenderit. Ipsa a veniam corporis tempore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, odio?</p>
     </div>
+  </div>
 
-    <!-- <div class="modal" id="modal-2">
-      <div class="modal__dialog">
-        <div class="modal__dialog-header">
-          <div class="modal__dialog-header-content">Modal window 2</div>
-          <div class="modal__dialog-header-close">
-            <button class="js-modal-close modal__dialog-header-close-btn">
-              <span>&times;</span>
-            </button>
-          </div>
-        </div>
-        <div class="modal__dialog-body">
-          <div>modal__dialog-body</div>
-        </div>
-        <div class="modal__dialog-footer">
-          <button class="js-modal-close btn-close">Close</button>
-        </div>
+  <button data-modal-btn="my_modal2">Window Two</button>
+  <div data-modal-window="my_modal2" class="modal">
+    <div class="modal_content">
+      <div class="modal_inner">
+        <div class="modal_title">Second Modal Window</div>
+        <div class="close_modal_window">&times;</div>
       </div>
-    </div> -->
-    <!-- ______________________________________________________ -->
-    <script src="/js/script.js"></script>
-  </body>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo ex labore esse saepe reprehenderit. Ipsa a veniam corporis tempore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, odio?</p>
+    </div>
+  </div>
+
+  <button data-modal-btn="my_modal3">Window Three</button>
+  <div data-modal-window="my_modal3" class="modal">
+    <div class="modal_content">
+      <div class="modal_inner">
+        <div class="modal_title">Third Modal Window</div>
+        <div class="close_modal_window">&times;</div>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo ex labore esse saepe reprehenderit. Ipsa a veniam corporis tempore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, odio?</p>
+    </div>
+  </div>
+
+  <!-- ______________________________________________________ -->
+  <script src="/js/main.js"></script>
+</body>
 </html>

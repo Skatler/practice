@@ -6,7 +6,7 @@ let width;
 function init() {
   console.log("resize");
   width = document.querySelector(".slider").offsetWidth;
-  sliderLine.style.width = width*images.lenght + "px";
+  sliderLine.style.width = width * images.lenght + "px";
   images.forEach(item => {
     item.style.width = width + "px";
     item.style.height = "auto";
@@ -20,9 +20,9 @@ init();
 document.querySelector(".slider-prev").addEventListener("click", () => {
   count--;
   if (count < 0) {
-    count = images.length -1;
+    count = images.length - 1;
   }
-  rollSlider(); 
+  rollSlider();
 });
 
 document.querySelector(".slider-next").addEventListener("click", () => {
@@ -30,7 +30,7 @@ document.querySelector(".slider-next").addEventListener("click", () => {
   if (count >= images.length) {
     count = 0;
   }
-  rollSlider(); 
+  rollSlider();
 });
 
 function rollSlider() {
